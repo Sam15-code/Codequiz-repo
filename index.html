@@ -19,46 +19,47 @@
     </header>
     <section class="text-center d-flex justify-content-evenly">
       <a href="./highsscores.html">View Scores</a>
+      <button id="start-quiz" class="btn btn-danger">Start Quiz</button>
       <p>
         Instructions , this is a quiz game with timers, wrong answer will deduct
         time left
       </p>
       <br />
-      <button id="start-quiz" class="btn btn-danger">Start Quiz</button>
     </section>
     <main id="main" class="contianer">
-      <aside class="col-4">
-        <h4>Time Left<span id="timer">Time: 0</span></h4>
-        <h4>Score<span id="scores-div"></span></h4>
-      </aside>
-      <section class="col-8">
-        <h5 id="question-div"></h5>
-        <div class="d-grid gap-2">
-          <button id="choices1" class="btn btn-primary" type="button">
-            Button
-          </button>
-          <button id="choices2" class="btn btn-primary" type="button">
-            Button
-          </button>
-          <button id="choices3" class="btn btn-primary" type="button">
-            Button
-          </button>
-          <button id="chioces4" class="btn btn-primary" type="button">
-            Button
-          </button>
-        </div>
-      </section>
+      <article class="row">
+        <aside class="col-4">
+          <h4>Time Left<span id="timer">Time: 0</span></h4>
+          <h4>Score<span id="scores-div"></span></h4>
+        </aside>
+        <section class="col-8">
+          <h5 id="question-div"></h5>
+          <div class="d-grid gap-2">
+            <button id="choices1" class="btn btn-primary" type="button">
+              Button
+            </button>
+            <button id="choices2" class="btn btn-primary" type="button">
+              Button
+            </button>
+            <button id="choices3" class="btn btn-primary" type="button">
+              Button
+            </button>
+            <button id="choices4" class="btn btn-primary" type="button">
+              Button
+            </button>
+          </div>
+        </section>
+      </article>
     </main>
     <br />
 
     <section id="results">
-        <div id="buttons">
-
-            <input id="start-button" type="button" value="Start Quiz" />
-            <!-- <div id="start-button"></div> -->
-        </div>
+      <div id="buttons">
+        <input id="start-button" type="button" value="Start Quiz" />
+        <!-- <div id="start-button"></div> -->
+      </div>
     </section>
-        <script
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
