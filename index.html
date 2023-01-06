@@ -16,9 +16,9 @@
   <body>
     <header class="bg-info text-white text-center">
       <h1>Code Quiz</h1>
+      <a href="./highscore.html">View Scores</a>
     </header>
-    <section class="text-center d-flex justify-content-evenly">
-      <a href="./highsscores.html">View Scores</a>
+    <section class="text-center container">
       <button id="start-quiz" class="btn btn-danger">Start Quiz</button>
       <p>
         Instructions , this is a quiz game with timers, wrong answer will deduct
@@ -55,11 +55,13 @@
     </main>
     <br />
 
-    <section id="results">
+    <section class="container" id="results">
       <div id="buttons">
+        <h4>Final Score:<span id="fscore"></span></h4>
         <label>enter User initials</label>
-        <input id="start-button" type="button" value="Start Quiz" />
-        <!-- <div id="start-button"></div> -->
+
+        <input id="username" type="text" placeholder="Enter User Initials" />
+        <button class="btn btn-primaru" id="saveuser">Save User details</button>
       </div>
     </section>
     <script

@@ -63,6 +63,7 @@ function checkAnswer(){
         qresults.textContent = (questionNumber +1) + "is Correct !"
     }else{
         timerCount -=10
+        score.textContent = scoreCount
         qresults.textContent = (questionNumber +1) + "is Incorrect !"
     }
     if(questionNumber< questionList.length-1){
@@ -78,6 +79,7 @@ function endEquiz(){
     mainEl.style.display = "none"
     resultsEl.style.display = "block"
     clearInterval(timerEl)
+    document.getElementById("fscore").innerText =  (scoreCount) + (timerCount)
 }
 
 
