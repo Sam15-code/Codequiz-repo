@@ -9,7 +9,7 @@ var choices4 = document.getElementById("choices4")
 var time = document.getElementById("timer")
 var score = document.getElementById("scores-div")
 var qresults = document.getElementById("question-results")
-
+var final = document.getElementById("final")
 
 
 
@@ -21,7 +21,7 @@ var timerEl;
 
 mainEl.style.display = "none"
 resultsEl.style.display = "none"
-
+final.style.display = "none"
 
 
 
@@ -87,3 +87,16 @@ choices1.addEventListener('click',checkAnswer)
 choices2.addEventListener('click',checkAnswer)
 choices3.addEventListener('click',checkAnswer)
 choices4.addEventListener('click',checkAnswer)
+
+
+document.getElementById("saveuser").addEventListener("click",function(){
+    var username = document.getElementById("username").value
+    var previewscore = JSON.parse(localStorage.getItem("codequiz")) || []
+    previewscore.push({
+        user: username,
+        score: (scoreCount)+(timerCount)
+    })
+    localStorage.setItem("codequiz", JSON.stringify(previewscore))
+    resultsEl.style.display = "none" 
+    final.style.display = "block"
+})
